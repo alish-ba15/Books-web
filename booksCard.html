@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="booksCard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="">
+    <div class="container">
+        <div class="mainCart">
+            <p>Urdu Novels</p>
+            <div class="icon-cart">
+                <a ><img src="Images/cart-shopping-solid.svg" alt=""id="add"></a>
+                <span class="cart-num">0</span>
+            </div>
+        </div>
+
+
+        <div class="second-card">
+            <div class="cardss" style="width: 16rem;">
+                <img src="Images/Book4.jpg" class="card-img-top" alt="..." id="first-image">
+                <div class="card-body">
+                    <p class="cards-wri">Yaaram</p>
+                    <p id="author">Sumaira Hameed</p>
+                    <p class="price">Rs.1000</p>
+                    <button onclick="addCart()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="cardss" style="width: 16rem;">
+                <img src="Images/Book5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="cards-wri">Haalim</p>
+                    <p>Nimrah Ahmed</p>
+                    <p class="price">Rs.1000</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="cardss" style="width: 16rem;">
+                <img src="Images/Book6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="cards-wri">Mushaf</p>
+                    <p>Nimrah Ahmed</p>
+                    <p class="price">Rs.1000</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="cardss" style="width: 16rem; ">
+                <img src="Images/Book1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="cards-wri">Abe-Hayat</p>
+                    <p>Umerah Ahmed</p>
+                    <p class="price">Rs.1000</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="cardss" style="width: 16rem;">
+                <img src="Images/Book2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="cards-wri">Amer Bail</p>
+                    <p>Umerah Ahmed</p>
+                    <p class="price">Rs.1000</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="cardss" style="width: 16rem;">
+                <img src="Images/Book3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="cards-wri">Namal</p>
+                    <p>Nimrah Ahmed</p>
+                    <p class="price">Rs.1000</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="cartTab">
+    <h1>Cart Lsit</h1>
+    <div class="cartlist">
+        <div class="item">
+            <div class="img"><img src="Images/Book4.jpg" alt=""></div>
+            <div class="bookName">
+                <p>Yaaram</p>
+            </div>
+            <div class="price">
+                <p class="price">Rs.1000</p>
+            </div>
+            <div class="quantity">
+                <span class="minus"><</span>
+                <span>1</span>
+                <span class="plus">></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn">
+        <button class="close">Close</button>
+        <button class="checkOut">Check Out</button>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
