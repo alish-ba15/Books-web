@@ -3,20 +3,68 @@
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
-    color: aliceblue;
+    color: #6b0e46 !important;
+    background: #d2b2f1;
 }
+@import url('https://fonts.googleapis.com/css?family=Noto%20Serif%20Tamil:700|Noto%20Serif%20Tamil:400');
+
+body {
+  font-family: 'Noto Serif Tamil';
+  font-weight: 400;
+}
+.book-log{
+    display: flex;
+}
+.navbar .container-fluid .booklish{
+    width: 55px;
+    margin-left: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Noto Serif Tamil';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 150px;
+    
+}
+
+h2 {font-size: 200%;
+    text-align: right;
+    float: right;
+}
+
+h3 {font-size: 2.369rem; /* 37.92px */
+font-weight: 800;
+text-transform: uppercase;
+/* text-align: left; */
+}
+
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
 nav{
     /* width: 97%; */
-    background-color: #000;
+    /* background-color: #000; */
     
 }
 .container-fluid .navbar-brand{
     margin-left: 5%;
-    color: aliceblue !important;
-    font-size: 150%;
+    color: #6b0e46 !important;
+    font-size: 210%;
     font-weight: 900;
+    font-family: 'Noto Serif Tamil';
+    /* font-weight: 700; */
 
 }
+
+
+
 
 #navbarSupportedContent ul{
     margin-left: 40%;
@@ -31,11 +79,15 @@ nav{
     justify-content: space-evenly;
     padding: 2px 20px 2px 20px;
     border-radius: 6px;
-    border: 3px solid #1D4948;
+    background: #6b0e46;
+    border: 3px solid #6b0e46;
 }
 #navbarSupportedContent form button a{
     text-decoration: none;
-    color: #1D4948;font-weight: 600;
+    color: #fff !important;
+    letter-spacing: 1.5px;
+    background: #6b0e46;
+    font-weight: 800;
 
 }
 #under-nav{
@@ -43,44 +95,59 @@ nav{
     height: 750px;
     margin-top: -10%;
     /* display: flex; */
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 .home-word{
-   margin-top: 8%;
-   margin-left: 7%;
+   margin-top: 4%;
+   margin-left: 13%;
    margin-bottom: 5%;
+   z-index: 15;
 }
 .home-word h2{
-    margin-top: 4%;
+    margin-top: -10%;
     padding-top: 13%;
     font-weight: 900;
     /* padding-bottom: 3%; */
-    font-size: 50px;
-    color: #fff;
+    font-size: 102px;
+    color: #A02F73;
 
     /* padding-bottom: -1000%; */
     /* margin-left: 11%; */
  }
  .home-word button{
-    padding: 10px;
+    text-align: right;
+    float: right;
+    padding: 12px;
+    background: #6b0e46;
     border-radius: 10px;
-    border: 3px solid #1D4948;
+    border: 3px solid #6b0e46;
+    
     margin-left: 1%;
 }
 .home-word button:hover{
-    background-color: #1D4948;
-    color: #fff;
+    /* background-color: #1D4948; */
+    color: #A02F73;
 
 }
+.home-word button i{
+    font-size: 25px;
+    margin-left: 2px;
+    /* margin-top: 2px; */
+    /* width: 12%; */
+    color: #fff !important;
+    background: #6b0e46;
+}
 .home-word button a{
-     color: #1D4948;
-     font-weight: 600;
+    color: #fff !important;
+     font-weight: 900;
+     letter-spacing: 1.5px;
+     background: #6b0e46;
      text-decoration: none;
 
  }
  .home-word button a:hover{
-    color: #fff;
+    color: #A02F73;
  
  }
 .home-img{
@@ -92,3 +159,42 @@ nav{
     width: 1050px;
 }
 
+
+
+
+
+.underNav{
+    display: flex;
+    margin-bottom: -13px;
+}
+.underNav #images{
+    margin-top: -25px !important;
+    margin-left: -13%;
+    display: flex;
+    z-index: 10;
+}
+.underNav #images #img2{
+    margin-left: 100%;
+    margin-top: 10%;
+    height: 83%;
+    border-radius: 30px;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5) ;
+}
+.underNav #images #img1{
+    margin-left: 20%;
+    position: absolute;
+    height: 73%;
+    margin-top: 5%;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) ;
+}
+.underNav #images #img3{
+    margin-left: -30%;
+    height: 77%;
+    margin-top: 16%;
+    /* margin-top: 8%; */
+    /* margin-left: -32%; */
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) ;
+}
