@@ -22,106 +22,148 @@ body{
 
     
 }
-.second-card{
-    display: flex;
 
-}
-/* .cardss{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-     border-radius: 6px solid #1D4948 !important; 
-    border: 4px solid #1D4948;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 50px 50px #000000;
-} */
 
-.cardss {
-    position: relative;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-.second-card .cardss .cardss-front, .second-card .cardss .card-body{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.second-card .cardss .cardss-front img{
-    width: 150px;
-    height: 200px;
-    margin: auto;
-}
-.second-card .cardss .card-body{
-    color: #fff;
-    transform: rotateY(180deg);
-    z-index: 1;
-}
-.second-card .cardss .card-body .back-header{
-    /* height: 45%; */
-    text-align: center;
 
-}
-.second-card .cardss .card-body .back-header img{
 
-    width:max-content;
-    height: 150px;
 
+
+.portfolio{
+    padding-bottom: 7rem;
 }
 
-.cardss img{
-    /* margin-left: 20px; */
-    width: 100%;
-}
-.cardss:hover{
-    border: 4px solid rgb(230, 230, 230);
-    box-shadow: #212121;
-    border-radius: 5px;
-    /* box-shadow: 2px solid #f85606; */
-}
-/* .cardss .card-body {
-    display: none;
-}
-.cardss:focus .card-body {
-    display:block;
-} */
-.card-body .cards-wri{
-    color: #fff;
-    margin-top: -10px;
-    font-size: 20px;
+.portfolio h2{
+    margin-bottom: 8rem;
 }
 
-.card-body .price{
-margin-top: -15px;
-font-size: 18px;
-font-weight: 600;
-color: #1D4948;
-}
-
-.card-body .after-dis{
-    color: #212121;
-    margin-top: -17px;
-    margin-bottom: -10px;
-    font-size: 14px;
-}
-.card-body button{
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    border: 2px solid #1D4948;
-    border-radius: 5px;
-    color: #1D4948;
-}
-.card-body .card-img-top{
-    max-height: 0px;
-}
-.container{
-
-    transform: translateX(100px);
+.portfolio .portfolio-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    transition: transform .5s;
+    background: #6b0e46;
+
+    /* margin-left: 50rem; */
+    /* justify-content: space-between; */
+   column-gap: 10px !important;
+   gap: 0.5rem;
+   animation: leftToRight 2.5s cubic-bezier(.36, -0.01, .5, 1.38) forwards;
+
+
 }
+.portfolio-container .portfolio-box{
+    margin-left: 50rem;
+    position: relative;
+    display: flex;
+    /* margin-left: -10%; */
+    /* border-radius: 2rem; */
+    width: 180px;
+    background: #6b0e46;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0) ;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfoilio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(  #fde5f3 , rgba(248, 241, 241, 0.1));
+    /* color: #6b0e46 ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 0 9rem; */
+    padding: 15%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.portfolio-box:hover .portfoilio-layer{
+   opacity: 1;
+}
+
+
+.portfoilio-layer h4{
+    font-size: 10px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.portfolio-box .portfoilio-layer .cards-wri{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: sans-serif;
+    color: #6b0e46 ;
+    /* margin: .1rem 0 1rem; */
+    margin-bottom: 0;
+}
+.portfoilio-layer #author{
+    font-size: 18px;
+    font-weight: 600;
+    /* text-align: in; */
+    color: #6b0e46 ;
+    display: inline !important;
+    font-family: sans-serif;
+    /* margin: .1rem 0 1rem; */
+    margin-bottom: 0;
+}
+.portfoilio-layer .price{
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b0e46 ;
+    font-family: sans-serif;
+    /* margin: .1rem 0 1rem; */
+    margin-bottom: 0;
+}
+.portfoilio-layer button{
+    background-color: #6b0e46;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 15px;
+    border: #6b0e46;
+}
+
+.portfoilio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #020202;
+    border-radius: 50%;
+}
+
+.portfoilio-layer a i{
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .mainCart{
