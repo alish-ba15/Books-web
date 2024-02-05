@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name":"Yaaram",
+        "price":1000,
+        "img":"Images/Book4.jpg"
+
+    },
+    {
+        "id": 2,
+        "name":"Haalim",
+        "price":1000,
+        "img":"Images/Book5.jpg"
+
+    },
+
+    {
+        "id": 3,
+        "name":"Mushaf",
+        "price":1000,
+        "img":"Images/Book6.jpg"
+
+    },
+    {
+        "id": 4,
+        "name":"Namal",
+        "price":1000,
+        "img":"Images/Book3.jpg"
+
+    },
+    {
+        "id": 5,
+        "name":"Amer Bail",
+        "price":1000,
+        "img":"Images/Book4.jpg"
+
+    },
+    {
+        "id": 6,
+        "name":"Abe Hayat",
+        "price":1000,
+        "img":"Images/Book1.jpg"
+
+    },
+    {
+        "id": 7,
+        "name":"Basil",
+        "price":1000,
+        "img":"Images/basil.jfif"
+
+    },
+    {
+        "id": 8,
+        "name":"Jannat Ky Patty",
+        "price":1000,
+        "img":"Images/JPK.jpg"
+
+    }
+
+]

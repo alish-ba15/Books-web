@@ -3,19 +3,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
-    color: aliceblue
+    color: aliceblue;
 }
 body{
     padding: 0;
     margin: 0;
-    background: #000 !important;
+    background: #d2b2f1 !important;
 }
 
 .mainCart p{
-    font-size: 150%;
-    margin-left: 2%;
-    margin-top: 1%;
-    color: #fff;
+    font-size: 200%;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: #6b0e46;
+    font-weight: 900;
+    font-family: 'Popins', serif !important;
 }
 .cards{
     display: flex;
@@ -32,17 +34,15 @@ body{
     padding-bottom: 7rem;
 }
 
-.portfolio h2{
-    margin-bottom: 8rem;
-}
+
 
 .portfolio .portfolio-container{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    background: #6b0e46;
+    /* background: #6b0e46; */
 
-    /* margin-left: 50rem; */
+    /* margin-left: 14%; */
     /* justify-content: space-between; */
    column-gap: 10px !important;
    gap: 0.5rem;
@@ -51,10 +51,10 @@ body{
 
 }
 .portfolio-container .portfolio-box{
-    margin-left: 50rem;
+    /* margin-left: 50rem; */
     position: relative;
     display: flex;
-    /* margin-left: -10%; */
+    margin-left: 40%;
     /* border-radius: 2rem; */
     width: 180px;
     background: #6b0e46;
@@ -62,7 +62,45 @@ body{
     overflow: hidden;
     flex-shrink: 0;
 }
+.portfolio-container .portfolio-box:nth-child(2){
+    margin-left: 20px;
+    width: 71%;
+}
+.portfolio-container .portfolio-box:nth-child(3){
+    margin-left: -50px;
+    width: 71%;
+}
+.portfolio-container .portfolio-box:nth-child(4){
+    margin-left: -120px;
+    width: 77%;
+    height: 243px;
+}
+.portfolio-container .portfolio-box:nth-child(5){
+    /* margin-left: -120px;
+    width: 77%; */
+    height: 243px;
+}
+.portfolio-container .portfolio-box:nth-child(6){
+    margin-left: 23px;
+    width: 70%;
+    height: 243px;
+}
+.portfolio-container .portfolio-box:nth-child(7){
+    margin-left: -49px;
+    width: 70%;
+    height: 243px;
+   }
+   .portfolio-container .portfolio-box:nth-child(8){
+    margin-left: -120px;
+    width: 77%;
+    height: 243px;
+   }
 
+   .portfolio-container .portfolio-box:nth-child(10){
+    margin-left: 24px;
+    width: 70%;
+    height: 277px;
+   }
 .portfolio-box img{
     width: 100%;
     transition: .5s ease;
@@ -173,7 +211,7 @@ body{
 }
 
 .icon-cart{
-    margin-right: 32%;
+    margin-right: 19%;
 }
 
 #add{
@@ -189,7 +227,7 @@ body{
     height: 20px;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: #6b0e46;
     color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -198,7 +236,8 @@ body{
 }
 .cartTab{
     width: 400px;
-    background-color: #000;
+    background-color: #6b0e46;
+    margin-right: -13.9%;
     color: #fff;
     position: fixed;
     inset: 0 -400px 0 auto;
@@ -207,32 +246,38 @@ body{
     transition: 0.5s;
 }
 body.showCart .cartTab{
+    
+    margin-right: -20%;
     inset: 0 0 0 auto;
 }
 body.showCart .container{
-    transform: translateX(-50px);
+    transform: translateX(-120px);
+}
+.cartTab{
+    margin-bottom: 34%;
 }
 .cartTab .btn{
     display: grid;
+    /* margin-top: -10%; */
     grid-template-columns: repeat(2, 1fr);
 }
 
 .cartTab .btn button{
-    background-color: #fff;
-    color: #1D4948;
+    background-color: #d2b2f1;
+    color: #6b0e46;
     font-size: 17px;
     font-weight: 600;
     border: none;
 }
 
 .cartTab .btn .close{
-    background-color: #1D4948;
-    color: #fff;
+    background-color: #fff;
+    color: #6b0e46;
     font-size: 17px;
     font-weight: 600;
 }
 .cartlist .item{
-    margin-bottom: 500px;
+    margin-bottom: 5px;
 }
 .cartlist .item .img img{
     width: 80%;
@@ -240,7 +285,7 @@ body.showCart .container{
 
 .cartlist .item{
     display: grid;
-    grid-template-columns: 65px 100px 50px 1fr;
+    grid-template-columns: 65px 100px 5px 2fr;
     gap: 10px;
     text-align: center;
     align-items: center;
@@ -259,9 +304,9 @@ body.showCart .container{
     border-radius: 50%;
     cursor: pointer;
 }
-.cartlist .item .quantity span:nth-child(2){
+.cartTab .cartlist .item .quantity span:nth-child(2){
     background-color: transparent;
-    color: #fff;
+    color: #fff !important;
     cursor: default;
 }
 
@@ -284,3 +329,97 @@ body.showCart .container{
     background: #fff;
     color: #000;
 } */
+
+
+.showForm {
+    margin-top: -180%;
+    margin-left: 27%;
+    position: absolute;
+    transition: margin-top 2s; /* Specify the property to transition */
+}
+
+.showAddForm {
+    margin-top: -45%;
+    margin-left: 27%;
+    z-index: 13000;
+}
+
+/* .hideBook{
+    background-color: #6b0e46;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 15px;
+    border: #6b0e46;
+    margin-top: 2%;
+    margin-left: 10%;
+} */
+.showForm{
+    background: #fff;
+    padding: 25px;
+}
+
+
+#formID{
+    display: block;
+
+}
+#formID .formWri{
+    color: #6b0e46;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+#formID .formWri input{
+    width: 300px;
+    border: none;
+    outline: none;
+    font-style: 45px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 3px solid #6b0e46;
+    background: transparent;
+    padding: 6px;
+}
+#formID .formWri input:active{
+    border: none;
+    outline: none;
+}
+
+#formButton{
+/* position: relative; */
+  width: 30%;
+  margin-top: 3px;
+  /* margin-bottom: 3px; */
+  height: 40px;
+  /* left: 10%; */
+  right: 10%;
+  background: #6b0e46;
+  border: 2px solid #6b0e46;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  display: inline;
+}
+.closeForm{
+    display: flex;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    border: 2px solid #6b0e46;
+    align-items: center;
+    background: #6b0e46;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -3%;
+    right: -11px;
+    }
+    
